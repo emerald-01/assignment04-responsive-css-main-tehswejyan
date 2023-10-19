@@ -1,0 +1,71 @@
+/* rules common for narrow and wide screens */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+header,
+nav,
+footer {
+  padding: 1rem;
+}
+
+main {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+
+h1 {
+  margin: 1rem;
+  padding: 0.25rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border-top: grey 3px solid;
+}
+
+article {
+  padding: 1rem;
+  margin: 0.25rem;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+div.footergrid nav {
+  padding: 0;
+  margin: 0;
+}
+
+/* rules for narrow screens */
+
+/* media query for wider screens */
+@media screen and (min-width: 960px) {
+  div.maingrid,
+  div.footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div.maingrid article {
+    flex-basis: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+
+}
