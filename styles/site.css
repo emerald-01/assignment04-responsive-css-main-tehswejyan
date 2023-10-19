@@ -18,6 +18,8 @@ footer {
 main {
   padding-inline-start: 1rem;
   padding-inline-end: 1rem;
+  padding-block-end: 1rem;
+  border-block-end: grey 3px solid;
 }
 
 h1 {
@@ -30,14 +32,10 @@ h2 {
   padding: 0;
 }
 
-nav {
-  border-top: grey 3px solid;
-}
-
 article {
   padding: 1rem;
   margin: 0.25rem;
-  border: 2px solid grey;
+  border: 1px solid grey;
   background-color: white;
 }
 
@@ -55,6 +53,7 @@ div.footergrid nav {
 
 /* media query for wider screens */
 @media screen and (min-width: 960px) {
+
   div.maingrid,
   div.footergrid {
     display: grid;
@@ -67,5 +66,10 @@ div.footergrid nav {
     flex-shrink: 0;
   }
 
+  img {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
