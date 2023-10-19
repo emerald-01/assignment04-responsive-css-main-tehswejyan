@@ -49,8 +49,6 @@ div.footergrid nav {
   margin: 0;
 }
 
-/* rules for narrow screens */
-
 /* media query for wider screens */
 @media screen and (min-width: 960px) {
 
